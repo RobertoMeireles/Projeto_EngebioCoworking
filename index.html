@@ -16,9 +16,7 @@
   <body>
     <div id="container">
       <div id="profile">
-        <img 
-        src="./assets/avatar.png" 
-        alt="Logotipo da EngebioCoworking" />
+        <img src="./assets/avatar.png" alt="Logotipo da EngebioCoworking" />
         <p>@EngebioCoworking</p>
       </div>
 
@@ -39,28 +37,39 @@
           >
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#" onclick="document.getElementById('contato').showModal()"
+            >Contato</a
+          >
         </li>
       </ul>
+
+      <dialog id="contato">
+        <a href="#" onclick="document.getElementById('contato').close()">x</a>
+        <p>(85) 98843-2008</p>
+      </dialog>
+
       <div id="social-links">
         <a href="https://github.com/RobertoMeireles" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
-        </a>        
+        </a>
         <a href="https://wa.me/5585988432008" target="_blank">
           <ion-icon name="logo-whatsapp"></ion-icon>
         </a>
-        <a href="https://instagram.com/engebiocoworking?utm_medium=copy_link" target="_blank">
+        <a
+          href="https://instagram.com/engebiocoworking?utm_medium=copy_link"
+          target="_blank"
+        >
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a href="https://instagram.com/engebiocoworking?utm_medium=copy_link" target="_blank">
+        <a
+          href="https://instagram.com/engebiocoworking?utm_medium=copy_link"
+          target="_blank"
+        >
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        
       </div>
 
-      <footer>
-        Feito por Meireles
-      </footer>
+      <footer>Feito por Meireles</footer>
     </div>
 
     <script
